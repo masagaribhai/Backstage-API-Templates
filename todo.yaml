@@ -7,10 +7,10 @@ metadata:
     - todo
     - .net core web api
   links:
-    - url: https://github.com/masagaribhai/backstage-demo
+    - url: https://github.com/masagaribhai/Backstage-API-Templates
       title: GitHub Repo
       icon: github
-    - url: https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore.yaml
+    - url: https://github.com/masagaribhai/Backstage-API-Templates/blob/main/todo.yaml
       title: API Spec
       icon: code
 spec:

@@ -5,7 +5,7 @@ metadata:
   description: The todos API
   tags:
     - todo
-    - .net core web api
+    - dot net core web api
   links:
     - url: https://github.com/masagaribhai/Backstage-API-Templates
       title: GitHub Repo

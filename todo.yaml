@@ -50,7 +50,14 @@ spec:
           summary: Create a todo item
           operationId: Create
           tags:
-            - todo items
+            - todo-items
+          requestBody:
+            description: all fields are required
+            required: true
+            content:
+                application/json:
+                schema:
+                    $ref: '#/components/schemas/Todo'
           responses:
             '201':
               description: Null response

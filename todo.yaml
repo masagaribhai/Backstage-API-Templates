@@ -33,6 +33,7 @@ spec:
           operationId: List
           tags:
             - todo items
+          parameters: [],
           responses:
             '200':
               description: A array of todo items
@@ -51,6 +52,7 @@ spec:
           operationId: Create
           tags:
             - todo-items
+          parameters: [],
           requestBody:
             description: Optional description in *Markdown*
             required: true

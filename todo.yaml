@@ -52,12 +52,8 @@ spec:
           tags:
             - todo-items
           requestBody:
-            description: all fields are required
-            required: true
-            content:
-                application/json:
-                schema:
-                    $ref: '#/components/schemas/Todo'
+            $ref: '#/components/requestBodies/TodoBody'
+            
           responses:
             '201':
               description: Null response
@@ -94,33 +90,41 @@ spec:
                   schema:
                     $ref: "#/components/schemas/Error"
     components:
-      schemas:
-        Todo:
-          type: object
-          required:
-            - id
-            - name
-            - isComplete
-          properties:
-            id:
-              type: integer
-              format: int64
-            name:
-              type: string
-            isComplete:
-              type: boolean
-        Todos:
-          type: array
-          items:
-            $ref: "#/components/schemas/Todo"
-        Error:
-          type: object
-          required:
-            - code
-            - message
-          properties:
-            code:
-              type: integer
-              format: int32
-            message:
-              type: string
+        schemas:
+            Todo:
+                type: object
+                required:
+                    - id
+                    - name
+                    - isComplete
+                properties:
+                    id:
+                        type: integer
+                        format: int64
+                    name:
+                        type: string
+                    isComplete:
+                        type: boolean
+            Todos:
+                type: array
+                items:
+                    $ref: "#/components/schemas/Todo"
+            Error:
+                type: object
+                required:
+                    - code
+                    - message
+                properties:
+                    code:
+                        type: integer
+                        format: int32
+                    message:
+                        type: string
+        requestBodies:
+            TodoBody:
+                description: A JSON object containing pet information
+                required: true
+                content:
+                    application/json:
+                    schema:
+                        $ref: '#/components/schemas/Pet'

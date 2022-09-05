@@ -122,9 +122,9 @@ spec:
                         type: string
         requestBodies:
             TodoBody:
-                description: A JSON object containing pet information
+                description: A JSON object containing todo information
                 required: true
                 content:
                     application/json:
                     schema:
-                        $ref: '#/components/schemas/Pet'
+                        $ref: '#/components/schemas/Todo'

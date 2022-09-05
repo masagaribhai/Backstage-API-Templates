@@ -52,7 +52,12 @@ spec:
           tags:
             - todo-items
           requestBody:
-            $ref: '#/components/requestBodies/TodoBody'
+            description: Optional description in *Markdown*
+            required: true
+            content:
+                application/json:
+                schema:
+                    $ref: '#/components/schemas/Todo'
             
           responses:
             '201':
@@ -120,11 +125,4 @@ spec:
                         format: int32
                     message:
                         type: string
-        requestBodies:
-            TodoBody:
-                description: A JSON object containing todo information
-                required: true
-                content:
-                    application/json:
-                    schema:
-                        $ref: '#/components/schemas/Todo'
+        

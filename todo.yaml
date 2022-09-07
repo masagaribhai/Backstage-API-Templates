@@ -23,7 +23,7 @@ spec:
       title: WebAPI
       version: '1.0'
     servers:
-      - url: https://localhost:5000/
+      - url: http://localhost:5000/
     paths:
       /todoitems:
         get:

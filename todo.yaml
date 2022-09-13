@@ -23,7 +23,7 @@ spec:
       title: WebAPI
       version: '1.0'
     servers:
-      - url: http://localhost:5000/
+      - url: https://webapi20220913163904.azurewebsites.net/
     paths:
       /todoitems:
         get:

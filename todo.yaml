@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: todo
+  name: poc-backstage-api
   description: The todos API
   tags:
     - todo

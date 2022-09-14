@@ -13,6 +13,8 @@ metadata:
     - url: https://github.com/masagaribhai/Backstage-API-Templates/blob/main/todo.yaml
       title: API Spec
       icon: code
+  annotations:
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: openapi
   lifecycle: experimental

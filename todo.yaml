@@ -25,7 +25,7 @@ spec:
       title: WebAPI
       version: '1.0'
     x-readme:
-        explorer-enabled: false
+        explorer-enabled: true
         proxy-enabled: false
         samples-languages: ["curl","python","go"]
     servers:

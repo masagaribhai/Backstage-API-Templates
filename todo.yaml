@@ -20,18 +20,21 @@ spec:
   lifecycle: experimental
   owner: makkaji
   definition: |
-    openapi: 3.0.1
+    openapi: 3.0.2
     info:
       title: WebAPI
       version: '1.0'
+    x-readme:
+        explorer-enabled: false
+        proxy-enabled: false
+        samples-languages": ["curl","python","go"]
     servers:
       - url: https://webapi20220913163904.azurewebsites.net/
     paths:
       /todoitems:
         get:
           tags:
-            - Todo
-          x-samples-languages: ["curl","python","go"]  
+            - Todo 
           responses:
             '200':
               description: Success

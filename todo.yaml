@@ -27,6 +27,7 @@ spec:
     x-readme:
         explorer-enabled: true
         proxy-enabled: false
+        samples-enabled: true
         samples-languages: ["curl","python","go"]
     servers:
       - url: https://webapi20220913163904.azurewebsites.net/

@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: poc-backstage-api
+  name: poc-backstage-api-3
   description: The todos API
   tags:
     - todo
@@ -24,11 +24,6 @@ spec:
     info:
       title: WebAPI
       version: '1.0'
-    x-readme:
-        explorer-enabled: false
-        proxy-enabled: false
-        samples-enabled: true
-        samples-languages: ["curl","python","go"]
     servers:
       - url: https://webapi20220913163904.azurewebsites.net/
     paths:

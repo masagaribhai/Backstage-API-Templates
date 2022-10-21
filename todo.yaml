@@ -23,7 +23,21 @@ spec:
     openapi: 3.0.2
     info:
       title: WebAPI
-      version: '1.0'
+      description: This is the sample web api
+      x-app-prefix: xyz
+      x-bitbucket-repourl: http://www.deloitte.com
+      x-buildplaykey: test
+      version: 'Core'
+      contact:
+           name: Dummy
+           email: xyz@xyz.com
+           url: http://www.deloitte.com
+      x-apmnumber: 123
+      x-vanguard-service-type: Core
+      x-vanguard-product-family: Tech Support
+      x-slo-urls: 
+           - https://www.deloitte.com
+           - https://www.vanguard.com
     servers:
       - url: https://webapi20220913163904.azurewebsites.net/
     paths:
